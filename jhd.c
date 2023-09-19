@@ -46,11 +46,11 @@ int main(void)
 	};
 	int C[ROWS][COLS];
 	int r, c;
-	// µÎ °³ÀÇ Çà·Ä ´õÇÏ±â
+	// ë‘ ê°œì˜ í–‰ë ¬ ë”í•˜ê¸°
 	for (r = 0; r < ROWS; r++)
 		for (c = 0; c < COLS; c++)
 			C[r][c] = A[r][c] + B[r][c];
-	// Çà·Ä Ãâ·Â
+	// í–‰ë ¬ ì¶œë ¥
 	for (r = 0; r < ROWS; r++)
 	{
 		for (c = 0; c < COLS; c++)
@@ -97,10 +97,10 @@ int main(void)
 	{ 1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1 },
 	{ 1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1 },
 	{ 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 } };
-	printf("º¯È¯Àü ÀÌ¹ÌÁö\n");
+	printf("ë³€í™˜ì „ ì´ë¯¸ì§€\n");
 	display(image);
 	inverse(image);
-	printf("\n\nº¯È¯ÈÄ ÀÌ¹ÌÁö\n");
+	printf("\n\në³€í™˜í›„ ì´ë¯¸ì§€\n");
 	display(image);
 	return 0;
 }
@@ -112,12 +112,12 @@ int main(void)
 {
 	char board[3][3];
 	int x, y, k, i;
-	for (x = 0; x < 3; x++) // º¸µå ÃÊ±âÈ­
+	for (x = 0; x < 3; x++) // ë³´ë“œ ì´ˆê¸°í™”
 		for (y = 0; y < 3; y++)
 			board[x][y] = ' ';
-	// »ç¿ëÀÚ·ÎºÎÅÍ À§Ä¡¸¦ ¹Ş¾Æ¼­ º¸µå¿¡ Ç¥½Ã
+	// ì‚¬ìš©ìë¡œë¶€í„° ìœ„ì¹˜ë¥¼ ë°›ì•„ì„œ ë³´ë“œì— í‘œì‹œ
 	for (k = 0; k < 9; k++) {
-		printf("(x, y) ÁÂÇ¥: ");
+		printf("(x, y) ì¢Œí‘œ: ");
 		scanf(" %d %d", &x, &y);
 		board[x][y] = (k % 2 == 0) ? 'X' : 'O';
 		for (i = 0; i < 3; i++) {
@@ -137,5 +137,16 @@ int main(void)
 	printf("%x",&A);
 	
 	return 0;
+}
+*/
+/*
+#include<stdio.h>
+int main(void)
+{
+	int A = 10;
+	int* p;
+	p = &A;
+
+	printf("%u,%u\n", p, &A);
 }
 */
