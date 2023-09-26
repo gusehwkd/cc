@@ -150,3 +150,22 @@ int main(void)
 	printf("%u,%u\n", p, &A);
 }
 */
+
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    printf("컴퓨터공학과 20230867 장현도\n\n");
+   
+    for (int i = 1; i < 10; i++)
+    {
+        for (int j = 1; j < 10; j++)
+        {
+            printf("%d * %d = %d \n", i, j, (i * j));
+        }
+        printf("\n");
+    }
+}
+*/
